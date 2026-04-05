@@ -98,6 +98,52 @@ h3 {
   }
 }
 
+@keyframes heroCanvasFade {
+  0% {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  8% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  33% {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes heroCanvasPulse {
+  0% {
+    opacity: 0.22;
+    transform: scaleX(0.72);
+  }
+  8% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  25% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  33% {
+    opacity: 0.22;
+    transform: scaleX(0.72);
+  }
+  100% {
+    opacity: 0.22;
+    transform: scaleX(0.72);
+  }
+}
+
 /* ============ UTILITY CLASSES ============ */
 .delay-100 {
   animation-delay: 0.1s;
@@ -133,6 +179,21 @@ h3 {
 
 .float {
   animation: float 3s ease-in-out infinite;
+}
+
+.hero-canvas-slide {
+  opacity: 0;
+  animation: heroCanvasFade 16s ease-in-out infinite;
+}
+
+.hero-canvas-indicator {
+  transform-origin: left center;
+  animation: heroCanvasPulse 16s ease-in-out infinite;
+}
+
+.home-gallery-strip {
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* ============ BUTTON STYLES ============ */
@@ -172,6 +233,63 @@ h3 {
 
 .container-max {
   @apply max-w-7xl mx-auto;
+}
+
+.page-shell {
+  background: linear-gradient(180deg, #f4eee1 0%, #efe6d4 100%);
+}
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0b3d2e 0%, #114737 100%);
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top left, rgba(214, 167, 86, 0.18), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(241, 235, 220, 0.12), transparent 28%);
+}
+
+.page-surface-warm {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #efe6d4 0%, #f6efe3 100%);
+}
+
+.page-surface-light {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f8f2e8 0%, #ffffff 100%);
+}
+
+.page-surface-cream {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #fffdf9 0%, #f3eadb 100%);
+}
+
+.page-surface-soft {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f5eddf 0%, #fffaf2 100%);
+}
+
+.page-surface-warm::before,
+.page-surface-light::before,
+.page-surface-cream::before,
+.page-surface-soft::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(214, 167, 86, 0.08), transparent 16%),
+    radial-gradient(circle at top right, rgba(214, 167, 86, 0.08), transparent 24%);
 }
 
 /* ============ GRADIENT ============ */

@@ -29,7 +29,7 @@ export default function Contact() {
     
     // WhatsApp Integration
     const whatsappMessage = `Hello Babuji Chaay, I would like to inquire about: ${formData.subject}\n\nMy details:\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`;
-    const whatsappLink = `https://wa.me/919076165666?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappLink = `https://wa.me/917249642148?text=${encodeURIComponent(whatsappMessage)}`;
     
     window.open(whatsappLink, "_blank");
 
@@ -48,8 +48,8 @@ export default function Contact() {
     {
       icon: <FaPhoneAlt size={22} />,
       title: "Phone",
-      details: ["+91 90761 65666"],
-      link: "tel:+919076165666"
+      details: ["+91 72496 42148"],
+      link: "tel:+917249642148"
     },
     {
       icon: "✉️",
@@ -74,10 +74,10 @@ export default function Contact() {
   ];
 
   return (
-    <main className="pt-24 min-h-screen bg-accent">
+    <main className="page-shell pt-24 min-h-screen">
       {/* HERO SECTION */}
-      <section className="bg-primary py-16 text-accent text-center">
-        <div className="container-max px-4">
+      <section className="page-hero py-16 text-accent text-center">
+        <div className="container-max relative px-4">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Get In Touch</h1>
           <p className="text-lg text-accent/90 max-w-2xl mx-auto">
             We'd love to hear from you! Whether you have questions, want to visit us, or are interested in franchise opportunities.
@@ -86,8 +86,8 @@ export default function Contact() {
       </section>
 
       {/* CONTACT INFORMATION CARDS */}
-      <section className="py-16 bg-accent">
-        <div className="container-max px-4">
+      <section className="page-surface-warm py-16">
+        <div className="container-max relative px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {contactInfo.map((info, idx) => (
               <div 
@@ -118,8 +118,8 @@ export default function Contact() {
       </section>
 
       {/* MAIN CONTACT SECTION */}
-      <section className="py-16 bg-white">
-        <div className="container-max px-4">
+      <section className="page-surface-light py-16">
+        <div className="container-max relative px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* FORM */}
             <div className="animate-slideInLeft">
@@ -273,8 +273,8 @@ export default function Contact() {
       </section>
 
       {/* MAP SECTION */}
-      <section className="py-16 bg-gray-50">
-        <div className="container-max px-4">
+      <section className="page-surface-soft py-16">
+        <div className="container-max relative px-4">
           <h2 className="text-3xl font-bold text-primary text-center mb-8">Find Us on Map</h2>
           <div className="w-full h-96 rounded-2xl overflow-hidden shadow-premium border-4 border-white">
             <iframe

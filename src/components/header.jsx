@@ -44,6 +44,7 @@ export default function Header() {
           <nav className="hidden md:flex gap-1">
             <NavLink href="/" label="Home" />
             <NavLink href="/menu" label="Menu" />
+            <NavLink href="/reviews" label="Reviews" />
             <NavLink href="/franchise" label="Franchise" />
             <NavLink href="/contact" label="Contact" />
           </nav>
@@ -63,6 +64,7 @@ export default function Header() {
             <nav className="flex flex-col container-max px-4 py-6 space-y-2">
               <MobileNavLink href="/" label="Home" onClose={() => setOpen(false)} />
               <MobileNavLink href="/menu" label="Menu" onClose={() => setOpen(false)} />
+              <MobileNavLink href="/reviews" label="Reviews" onClose={() => setOpen(false)} />
               <MobileNavLink href="/franchise" label="Franchise" onClose={() => setOpen(false)} />
               <MobileNavLink href="/contact" label="Contact" onClose={() => setOpen(false)} />
               <Link

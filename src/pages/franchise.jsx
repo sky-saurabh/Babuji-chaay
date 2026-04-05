@@ -9,10 +9,10 @@ export default function Franchise() {
   ];
 
   return (
-    <main className="pt-24 min-h-screen bg-accent">
+    <main className="page-shell pt-24 min-h-screen">
       {/* HERO SECTION */}
-      <section className="bg-gradient-to-b from-primary to-primary py-16 text-accent text-center">
-        <div className="container-max">
+      <section className="page-hero py-16 text-accent text-center">
+        <div className="container-max relative">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Partnership Opportunities</h1>
           <p className="text-lg text-accent text-opacity-90 max-w-2xl mx-auto mb-8">
             Interested in joining Babuji Chaay? We'd love to explore partnership opportunities with you.
@@ -22,8 +22,8 @@ export default function Franchise() {
       </section>
 
       {/* WHY BABUJI CHAAY */}
-      <section className="section-padding bg-accent">
-        <div className="container-max">
+      <section className="page-surface-warm section-padding">
+        <div className="container-max relative">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
               Why Partner With Us?
@@ -48,8 +48,8 @@ export default function Franchise() {
       </section>
 
       {/* WHAT WE OFFER */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
+      <section className="page-surface-light section-padding">
+        <div className="container-max relative">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="animate-slideInLeft">
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
@@ -91,8 +91,8 @@ export default function Franchise() {
       </section>
 
       {/* OUR PRODUCTS */}
-      <section className="section-padding bg-accent">
-        <div className="container-max">
+      <section className="page-surface-cream section-padding">
+        <div className="container-max relative">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
               Our Product Range
@@ -121,8 +121,8 @@ export default function Franchise() {
       </section>
 
       {/* INQUIRY FORM SECTION */}
-      <section className="section-padding bg-white">
-        <div className="container-max max-w-2xl">
+      <section className="page-surface-soft section-padding">
+        <div className="container-max relative max-w-2xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-serif font-bold text-primary mb-4">
               Get In Touch
@@ -167,8 +167,8 @@ export default function Franchise() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="section-padding bg-gradient-to-r from-primary to-primary-dark text-accent text-center">
-        <div className="container-max max-w-2xl">
+      <section className="page-hero section-padding text-accent text-center">
+        <div className="container-max relative max-w-2xl">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
             Ready to Explore?
           </h2>

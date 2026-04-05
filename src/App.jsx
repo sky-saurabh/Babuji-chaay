@@ -6,6 +6,7 @@ import SplashScreen from "./components/splashscreen";
 
 import Home from "./pages/home";
 import Menu from "./pages/menu";
+import Reviews from "./pages/reviews";
 import Franchise from "./pages/franchise";
 import Contact from "./pages/contact";
 
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/reviews" element={<Reviews />} />
         <Route path="/franchise" element={<Franchise />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
